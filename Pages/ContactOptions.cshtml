@@ -1,0 +1,116 @@
+﻿@page
+@model ContactOptionsModel
+@{
+    ViewData["Title"] = "Let's Connect ";
+}
+
+<div class="contact-wrapper">
+    <div class="contact-nav">
+        <div class="nav-container">
+
+            <div class="hero-logo">
+                <img src="images/econas-logo.png" alt="Econas Studio Logo" class="logo-image" />
+                <span class="logo-text">Econas Studio</span>
+            </div>
+            <ul class="hero-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/#about">About Me</a></li>
+            </ul>
+            <a href="/contactoptions#contact" class="btn-hero-nav active">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="contact-main">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1 class="contact-title">
+                    Let's Work <span>Together!</span>
+                </h1>
+                <p class="contact-subtitle">
+                    Choose your preferred way to connect. I typically respond within 24 hours.
+                </p>
+            </div>  
+
+            <div class="contact-grid">
+                <!-- Email Card -->
+                <a href="mailto:hannah@econasstudio.com" class="contact-card email-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email Me</h3>
+                    <p>hannah@econasstudio.com</p>
+                    <span class="card-badge">Primary</span>
+                </a>
+
+                <!-- LinkedIn Card -->
+                <a href="https://www.linkedin.com/in/hannah-jane-econas-33389a399/" target="_blank" class="contact-card">
+                    <div class="contact-icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect professionally</p>
+                </a>
+
+                <!-- Behance Card -->
+                <a href="https://www.behance.net/hannaheconas" target="_blank" class="contact-card">
+                    <div class="contact-icon">🎨</div>
+                    <h3>Behance</h3>
+                    <p>View my portfolio</p>
+                </a>
+
+                <!-- Instagram Card -->
+                <a href="https://www.instagram.com/perplex009123/" target="_blank" class="contact-card">
+                    <div class="contact-icon">📸</div>
+                    <h3>Instagram</h3>
+                    <p>See my creative process</p>
+                </a>
+
+                <!-- Dribbble Card -->
+                <a href="https://dribbble.com/hannah-jane-econas" target="_blank" class="contact-card">
+                    <div class="contact-icon">🏀</div>
+                    <h3>Dribbble</h3>
+                    <p>Browse design shots</p>
+                </a>
+
+                <!-- Schedule Call Card -->
+                <a href="https://calendly.com/hannahjaneeconas" target="_blank" class="contact-card">
+                    <div class="contact-icon">📅</div>
+                    <h3>Schedule Call</h3>
+                    <p>Book a 30-min chat</p>
+                </a>
+            </div>
+
+            <!-- Quick Contact Form -->
+            <div class="quick-form-section" id="contact">
+                @if (Model.MessageSent)
+                {
+                    <!-- Success Message UI -->
+                    <div class="success-message">
+                        <div class="success-icon">✓</div>
+                        <h2 class="success-title">Message Sent Successfully!</h2>
+                        <p class="success-subtitle">
+                            Thank you for reaching out! I'll get back to you within 24 hours.
+                        </p>
+                        <a href="/contactoptions" class="btn btn-hero-primary">Send Another Message</a>
+                    </div>
+                }
+                else
+                {
+                    <!-- Contact Form UI -->
+                    <h2 class="form-title">Or Send a Quick Message</h2>
+                    <form class="quick-contact-form" method="post">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="Name" placeholder="Your Name" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="Email" placeholder="Your Email" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-hero-primary">Send Message</button>
+                    </form>
+                }
+            </div>
+        </div>
+    </div>
+</div>

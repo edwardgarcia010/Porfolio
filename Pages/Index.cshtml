@@ -1,0 +1,129 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Portfolio - Hannah Jane Econas";
+}
+
+<!-- Navigation -->
+<div class="hero-nav">
+    <div class="nav-container">
+        <div class="hero-logo">
+            <img src="images/econas-logo.png" alt="Econas Studio Logo" class="logo-image" />
+            <span class="logo-text">Econas Studio</span>
+        </div>
+        <ul class="hero-menu">
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/myprojects">Projects</a></li>
+            <li><a href="/aboutme">About Me</a></li>
+        </ul>
+        <a href="/contactoptions#contact" class="btn-hero-nav">Contact Me</a>
+    </div>
+</div>
+
+
+<!-- Hero content wrapper -->
+<div class="hero-wrapper">
+    <div class="hero-main">
+        <div class="hero-container">
+            <!-- LEFT HERO TEXT -->
+            <div class="hero-left">
+                <h1 class="hero-title">
+                    Hey! I Am
+                    <span>Hannah Jane Econas</span>
+                </h1>
+                <p class="hero-subtitle">
+                    UI and visual designer who loves calm, friendly interfaces and simple digital graphics.
+                </p>
+                <div class="hero-buttons">
+                    <a href="/contactoptions" class="btn btn-hero-primary">Lets Connect</a>
+                </div>
+
+                <div class="hero-brands">
+                    <span class="hero-brands-label">WORKED WITH</span>
+                    <div class="hero-brand-icons">
+                        <img src="images/figma.png" alt="Figma" class="brand-logo" />
+                        <img src="images/github.png" alt="GitHub" class="brand-logo" />
+                        <img src="images/google_dev.png" alt="Google Developers" class="brand-logo" />
+                        <img src="images/act.png" alt="ACT" class="brand-logo" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT HERO IMAGE / FLOATING CARDS -->
+            <div class="hero-right">
+                <div class="hero-photo-wrapper">
+                    <div class="hero-photo-bg"></div>
+                    <img src="images/hannah.JPG"
+                         alt="Hannah Jane Econas"
+                         class="hero-photo" />
+                </div>
+
+                <div class="floating-card badge-top-right">
+                    <span class="badge-emoji">🏆</span>
+                    <div>
+                        <div class="badge-title">Best Design</div>
+                        <div class="badge-subtitle">Awards</div>
+                    </div>
+                </div>
+
+                <div class="floating-card badge-middle-left">
+                    <span class="badge-emoji">🎨</span>
+                    <div>
+                        <div class="badge-title">UI / UX</div>
+                        <div class="badge-subtitle">Clean interface lover</div>
+                    </div>
+                </div>
+
+                <div class="floating-card badge-bottom-right">
+                    <span class="badge-emoji">📱</span>
+                    <div>
+                        <div class="badge-title">Mobile UI</div>
+                        <div class="badge-subtitle">Smooth layouts</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SERVICES / ABOUT SECTION -->
+<div class="section-services" id="about">
+    <div class="services-container">
+        <div class="service-stack">
+            <div class="service-card primary">
+                <div class="service-icon">💻</div>
+                <div>
+                    <h3>Developer Friendly</h3>
+                    <p>Delivers clean assets and specs so developers can implement designs easily.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎯</div>
+                <div>
+                    <h3>UI / UX</h3>
+                    <p>Simple flows and layouts that help users find what they need quickly.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🖼️</div>
+                <div>
+                    <h3>Visual Design</h3>
+                    <p>Social posts, banners, and branding graphics for small businesses.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="services-content">
+            <h2 class="section-title">My Awesome <span>Services</span></h2>
+            <p>
+                Hannah designs soft, playful interfaces for web and mobile apps, focusing on color, spacing,
+                and typography instead of code.
+            </p>
+            <p>
+                She is comfortable using Figma and Photoshop to create dashboards, e‑commerce screens,
+                and social media graphics ready for development.
+            </p>
+            <a href="/hireme" class="btn btn-hero-primary">Hire Me</a>
+        </div>
+    </div>
+</div>
